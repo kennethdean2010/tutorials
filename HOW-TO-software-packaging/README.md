@@ -136,4 +136,6 @@ You can now find `Firefox.pkg` located in your project's `build` directory.
 
 ###What's Next?
 
-Now you deploy your package using whatever method you see fit. And should you ever need to, updating your package is now as simple as installing the latest version of Firefox, changing the version number in `build-info.plist` and `remove_Firefox.sh` and re-executing `build-package.sh`.
+Now you can move on to deploying your package by using any variety of methods currently available. If you happen to be a JAMF user such as myself, be sure to check out [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment).
+
+Should you ever need to update your package, it's now as simple as installing the latest version of Firefox, changing the version number in `build-info.plist` and `remove_Firefox.sh` and re-executing the `build-package.sh` script.
