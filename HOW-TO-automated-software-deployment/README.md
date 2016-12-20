@@ -52,7 +52,7 @@ Create a Policy called `Install_Firefox` with the following configuration now.
 - **Package**
   - [x] Packages
     - Firefox.pkg
-      - [x] Action
+      - Action
         - Install
 - **Maintenance**
   - [x] Update Inventory
@@ -72,12 +72,12 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 - **Package**
   - [x] Packages
     - Firefox.pkg
-      - [x] Action
+      - Action
         - Uninstall
 - **Scripts**
   - [x] Scripts
     - remove_Firefox.sh
-      - [x] Priority
+      - Priority
         - After
 - **Maintenance**
   - [x] Update Inventory
