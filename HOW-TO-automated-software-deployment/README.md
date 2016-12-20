@@ -11,4 +11,4 @@ Thankfully, with a little bit of planning, we were able to meet all of these req
 
 ###Prerequisite
 
-For this tutorial, we will be deploying the `Firefox.pkg` package and `remove_Firefox.sh` script from [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging). If you have not yet completed this tutorial, please take a moment to familiarize yourself with it before proceeding.
+For this tutorial, we will be deploying the `Firefox.pkg` package and `remove_Firefox.sh` script from [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging). If you have not yet completed that tutorial, please take a moment to familiarize yourself with it now.
