@@ -32,7 +32,7 @@ When it comes to the `identifier`, `name` and `version` of our package, I've fou
 
 Update the `build-info.plist` with the values as illustrated below.
 
-> NOTE: For more on software deployments, see [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment).
+> NOTE: See [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information of deployments and upgrades.
 
 ```xml
 
