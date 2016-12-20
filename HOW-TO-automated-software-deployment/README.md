@@ -12,3 +12,7 @@ Thankfully, with a little bit of planning, we were able to meet all of these req
 ###Prerequisite
 
 For this tutorial, we will be deploying the `Firefox.pkg` package and `remove_Firefox.sh` script from [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging). If you have not yet completed that tutorial, please take a moment to familiarize yourself with it now.
+
+###Static Computer Group
+
+Most of our packaged software falls into the "Optional" category. This means that it is deployed to a users workstation upon request only, as opposed to being installed during our provisioning process. As a result, we've created a Static Computer Group for most of our available titles.
