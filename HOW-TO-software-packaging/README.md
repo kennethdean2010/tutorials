@@ -120,9 +120,13 @@ rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
 
 ###Build The Package
 
+Now that we've installed Firefox and prepared our Munkipkg project, we're ready to build our package. First, launch **Terminal** and `cd` into the project directory (assuming that it's located on your Desktop).
+
 ```
 cd Desktop/Mozilla/Firefox/50.1.0/Firefox/
 ```
+
+Next, run the `build-package.sh` script.
 
 ```
 sudo sh build-package.sh
