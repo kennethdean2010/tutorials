@@ -28,7 +28,7 @@ Download and install the latest version of [Firefox](https://www.mozilla.org/fir
 
 ###build-info.plist
 
-Next, we need to specify the `identifier`, `name` and `version` of our package in the `build-info.plist`.
+When it comes to the `identifier`, `name` and `version` of our package, I've found it best to keep it simple.
 
 ```xml
 
