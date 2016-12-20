@@ -134,4 +134,6 @@ sudo sh build-package.sh
 
 You can now find `Firefox.pkg` located in your project's `build` directory.
 
-###What's Next
+###What's Next?
+
+Now you deploy your package using whatever method you see fit. And should you ever need to, updating your package is now as simple as installing the latest version of Firefox, changing the version number in `build-info.plist` and `remove_Firefox.sh` and re-executing `build-package.sh`.
