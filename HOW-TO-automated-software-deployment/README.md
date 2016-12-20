@@ -36,3 +36,7 @@ Create a Smart Computer Group called `deploy_Firefox` with the following criteri
 Create a Smart Computer Group called `remove_Firefox` with the following criteria now.
 
 ![remove-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/remove-firefox-criteria.png)
+
+##Policies
+
+Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer group, we are able to create a single policy for deploying our package that satisfies all of our initial requirements.
