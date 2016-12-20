@@ -1,3 +1,3 @@
 #automated-software-deployment
-![deploy-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/deploy-firefox-criteria.png)
-![remove-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/remove-firefox-criteria.png)
+
+When we first began using JAMF Pro in our environment, we set out with a very specific set of requirements when it came to implementing policy-based software deployments.
