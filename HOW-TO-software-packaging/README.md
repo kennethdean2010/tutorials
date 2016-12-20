@@ -18,7 +18,7 @@ In this instance, rename the directory structure contained in `munki-pkg-templat
 /Mozilla/Firefox/50.1.0/Firefox/...
 ```
 
-###Download Firefox
+##Download Firefox
 
 Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Since this will be the version contained in our package, it's a good practice to move the original disk image to the `template` directory for safekeeping.
 
@@ -118,7 +118,7 @@ rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
 
 ```
 
-###Build The Package
+##Build The Package
 
 Now that we've installed Firefox and prepared our Munkipkg project, we're ready to build our package. First, launch Terminal and `cd` into the project directory (assuming that it's located on your Desktop).
 
