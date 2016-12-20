@@ -84,4 +84,4 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 - **Scope**
   - [x] Targets
     - Specific Computers
-      - deploy_Firefox
+      - remove_Firefox
