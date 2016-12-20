@@ -85,32 +85,34 @@ buildPackage
 
 ```
 
-###remove_Package.sh
+###remove_Firefox.sh
 
 ```bash
 
 #!/bin/sh
 #
-# remove_Package.sh
+# remove_Firefox.sh
 # 
 #
-# Created by YOUR_NAME_HERE on 12/20/16.
-# Copyright 2016 by YOUR_COMPANY_HERE. All rights reserved.
+# Created by Jayson Kish on 12/20/16.
+# Copyright 2016 by Topless Banana. All rights reserved.
 #
-# Version 1.0
+# Version 50.1.0
 #
 #
-#
-
-
-rm /private/var/db/receipts/com.example.pkg.Package.plist
-rm /private/var/db/receipts/com.example.pkg.Package.bom
-
 #
 
-/bin/rm $0 remove_Package.sh
+
+rm /private/var/db/receipts/org.mozilla.pkg.Firefox.plist
+rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
+
+#
+
+/bin/rm $0 remove_Firefox.sh
 
 #
 
 
 ```
+
+###Build The Package
