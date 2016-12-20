@@ -6,7 +6,7 @@
 
 ###munki-pkg-template.zip
 
-In an effort to keep things organized, I've adopted the following directory structure on my package repository. This also allows us the flexibility to maintain multiple versions without needing to rename the packages themselves.
+In an effort to keep things organized, I've adopted the following directory structure on our package repository. This also allows us the flexibility to maintain multiple versions without needing to rename the packages themselves.
 
 ```
 /Vendor/Package/Version/Package/...
