@@ -47,19 +47,14 @@ Create a Policy called `Install_Firefox` with the following configuration now.
 
 - **General**
   - [x] Recurring Check-In
-  - [x] Execution Frequency
-    - Ongoing
+  - [x] Execution Frequency: Ongoing
 - **Package**
-  - [x] Packages
-    - Firefox.pkg
-      - Action
-        - Install
+  - [x] Packages: `Firefox.pkg`
+  - [x] Action: Install
 - **Maintenance**
   - [x] Update Inventory
 - **Scope**
-  - [x] Targets
-    - Specific Computers
-      - deploy_Firefox
+  - [x] Targets: Specific Computers: `deploy_Firefox`
 
 ###Remove_Firefox
 
@@ -67,24 +62,17 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 
 - **General**
   - [x] Recurring Check-In
-  - [x] Execution Frequency
-    - Ongoing
+  - [x] Execution Frequency: Ongoing
 - **Package**
-  - [x] Packages
-    - Firefox.pkg
-      - Action
-        - Uninstall
+  - [x] Packages: `Firefox.pkg`
+  - [x] Action: Uninstall
 - **Scripts**
-  - [x] Scripts
-    - remove_Firefox.sh
-      - Priority
-        - After
+  - [x] Scripts: `remove_Firefox.sh`
+  - [x] Priority: After
 - **Maintenance**
   - [x] Update Inventory
 - **Scope**
-  - [x] Targets
-    - Specific Computers
-      - remove_Firefox
+  - [x] Targets: Specific Computers: `remove_Firefox`
 
 ##Putting It All Together
 
