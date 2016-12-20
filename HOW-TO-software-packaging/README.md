@@ -119,3 +119,11 @@ rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
 ```
 
 ###Build The Package
+
+```
+cd Desktop/Mozilla/Firefox/50.1.0/Firefox/
+```
+
+```
+sudo sh build-package.sh
+```
