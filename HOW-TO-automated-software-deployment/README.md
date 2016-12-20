@@ -76,15 +76,15 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 
 ##Putting It All Together
 
-Now that we have all of the necessary components in place for our automated software deployment infrastructure, let's take a look at how we would put them all together and use them in practice.
+Now that we have all of the components in place for our automated software deployment setup, let's take a look at how we would use it in practice for each of our deployment needs.
 
-###Deploying Software
+###Deploy Software
 
 To deploy software to a particular workstation, simply assign it to the `Firefox` Static Computer Group.
 
-###Updating Software
+###Update Software
 
-To update existing software to a new version, simply replace the existing `Firefox.pkg` package on the JAMF distribution point and update the version criteria in the `deploy_Firefox` Smart Computer Group.
+To update existing software to a new version, simply replace the `Firefox.pkg` package on the JAMF distribution point and update the version criteria in the `deploy_Firefox` Smart Computer Group.
 
 ###Remove Software
 
