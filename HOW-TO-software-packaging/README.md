@@ -32,8 +32,6 @@ When it comes to the `identifier`, `name` and `version` of our package, I've fou
 
 Update `build-info.plist` with the values as illustrated below.
 
-> NOTE: See [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information on deployments and upgrades.
-
 ```xml
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -60,6 +58,8 @@ Update `build-info.plist` with the values as illustrated below.
 </plist>
 
 ```
+
+> NOTE: See [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information on deployments and upgrades.
 
 ###build-package.sh
 
