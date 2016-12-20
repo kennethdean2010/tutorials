@@ -24,3 +24,15 @@ Create a Static Computer Group called `Firefox` now.
 ##Smart Computer Group
 
 We leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. Each of our policies are scoped to a particular Smart Computer Group.
+
+###deploy_Firefox
+
+Create a Smart Computer Group called `deploy_Firefox` with the following criteria.
+
+![deploy-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/deploy-firefox-criteria.png)
+
+###remove_Firefox
+
+Create a Smart Computer Group called `remove_Firefox` with the following criteria.
+
+![remove-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/remove-firefox-criteria.png)
