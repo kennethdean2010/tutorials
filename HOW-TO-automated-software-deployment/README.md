@@ -64,3 +64,24 @@ Create a Policy called `Install_Firefox` with the following configuration now.
 ###Remove_Firefox
 
 Create a Policy called `Remove_Firefox` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency
+    - Ongoing
+- **Package**
+  - [x] Packages
+    - Firefox.pkg
+      - [x] Action
+        - Uninstall
+- **Scripts**
+  - [x] Scripts
+    - remove_Firefox.sh
+      - [x] Priority
+        - After
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets
+    - Specific Computers
+      - deploy_Firefox
