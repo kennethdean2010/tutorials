@@ -9,9 +9,9 @@ When we began implementing [JAMF Pro](https://www.jamf.com/products/jamf-pro/) i
 
 Thankfully, with a little bit of planning, we were able to meet all of these requirements successfully.
 
-##Prerequisite
+##Prerequisites
 
-Be sure to complete the [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) tutorial before proceeding.
+Please complete the [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) tutorial before proceeding.
 
 ##Static Computer Group
 
