@@ -24,7 +24,7 @@ In this instance, rename the directory structure contained in `munki-pkg-templat
 
 ###Download Firefox
 
-Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Once installed, eject the disk image and move it to `/Mozilla/Firefox/50.1.0/Firefox/template/` for safekeeping.
+Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Since this will be the version contained in our finished package, it's good practice to keep the original media around for archival purposes.
 
 ###build-info.plist
 
