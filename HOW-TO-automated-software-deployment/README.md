@@ -43,4 +43,8 @@ Because our package is simply called `Firefox.pkg` and the version criteria is s
 
 ###Install_Firefox
 
+Create a Policy called Install_Firefox with the following configuration now.
+
 ###Remove_Firefox
+
+Create a Policy called Remove_Firefox with the following configuration now.
