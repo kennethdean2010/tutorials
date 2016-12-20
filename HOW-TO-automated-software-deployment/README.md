@@ -88,4 +88,4 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 
 ##Putting It All Together
 
-Now that we have our package, script, Static Computer Group, Smart Computer Groups and Policies in place, let's take a look at how we'd use them in practice.
+Now that we have all of the necessary components in place for our automated software deployment, let's take a look at how we would use them in practice.
