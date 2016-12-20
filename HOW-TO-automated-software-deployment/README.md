@@ -23,4 +23,4 @@ Create a Static Computer Group called `Firefox` now.
 
 ##Smart Computer Group
 
-We leverage Smart Computer Groups
+We leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation.
