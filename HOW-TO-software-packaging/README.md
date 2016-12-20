@@ -132,4 +132,6 @@ Then finally, execute the `build-package.sh` script to build the package.
 sudo sh build-package.sh
 ```
 
-You should now see `Firefox.pkg` located in your project's `build` directory.
+You can now find `Firefox.pkg` located in your project's `build` directory.
+
+###What's Next
