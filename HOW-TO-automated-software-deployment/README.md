@@ -15,8 +15,12 @@ For this tutorial, we will be deploying the `Firefox.pkg` package and `remove_Fi
 
 ##Static Computer Group
 
-Most of our packaged software falls into the "Optional" category. This means that it is deployed to a users workstation upon request only, as opposed to being installed during our provisioning process. As a result, we've created a Static Computer Group for each one of our available software titles.
+Most of our packaged software falls into the "Optional" category. This means that it is deployed to a users workstation upon request only, as opposed to being installed during our provisioning process. As a result, we've created Static Computer Groups for each one of our available software titles.
 
 ###Firefox
 
 Create a Static Computer Group called `Firefox` now.
+
+##Smart Computer Group
+
+We leverage Smart Computer Groups
