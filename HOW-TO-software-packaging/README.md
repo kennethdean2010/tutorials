@@ -30,7 +30,7 @@ Download and install the latest version of [Firefox](https://www.mozilla.org/fir
 
 When it comes to the `identifier`, `name` and `version` of our package, I've found that it's best to keep it simple. In our environment we only deploy one version of an application at a time, which makes it easier to maintain consistency.
 
-Update the `build-info.plist` with the values as illustrated below.
+Update `build-info.plist` with the values as illustrated below.
 
 > NOTE: See [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information on deployments and upgrades.
 
@@ -63,20 +63,24 @@ Update the `build-info.plist` with the values as illustrated below.
 
 ###build-package.sh
 
+The purpose of good automation is to do something repeatedly in a controlled, predictable fashion. Therefore the purpose of this script is to do three things: _Create the folders. Populate the payload. Build the package._
+
+Update `build-package.sh` with the function definitions as illustrated below.
+
 ```bash
 
 #!/bin/sh
 
 buildFolderStructure() {
-
+	mkdir payload/Applications
 }
 
 buildPayload() {
-
+	cp -rf /Applications/Firefox.app payload/Applications/
 }
 
 buildPackage() {
-    munkipkg ../Package/
+    munkipkg ../Firefox/
 }
 
 buildFolderStructure
