@@ -39,4 +39,4 @@ Create a Smart Computer Group called `remove_Firefox` with the following criteri
 
 ##Policies
 
-Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer group, we are able to create a single policy for deploying our package that satisfies all of our initial requirements.
+Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer Group, we are able to create just two policies for managing our package that satisfies all of our initial implementation requirements.
