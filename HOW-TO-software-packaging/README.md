@@ -102,7 +102,7 @@ buildPackage
 #
 #
 
-
+rm -rf /Applications/Firefox.app
 rm /private/var/db/receipts/org.mozilla.pkg.Firefox.plist
 rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
 
