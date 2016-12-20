@@ -126,8 +126,10 @@ Now that we've installed Firefox and prepared our Munkipkg project, we're ready 
 cd Desktop/Mozilla/Firefox/50.1.0/Firefox/
 ```
 
-Next, run the `build-package.sh` script.
+Then finally, execute the `build-package.sh` script to build the package.
 
 ```
 sudo sh build-package.sh
 ```
+
+You should now see `Firefox.pkg` located in your project's `build` directory.
