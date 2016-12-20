@@ -1,3 +1,3 @@
 #automated-software-deployment
 
-When we first began using JAMF Pro in our environment, we set out with a very specific set of requirements when it came to implementing policy-based software deployments.
+Shortly after setting up [JAMF Pro](https://www.jamf.com/products/jamf-pro/) in our environment, we set out with a very specific set of requirements for implementing policy based software deployments.
