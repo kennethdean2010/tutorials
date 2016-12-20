@@ -24,9 +24,11 @@ In this instance, rename the directory structure contained in `munki-pkg-templat
 
 ###Download Firefox
 
-Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Since this will be the version contained in our finished package, it's a good practice to move the original disk image to the `template` directory for safekeeping.
+Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Since this will be the version contained in our package, it's a good practice to move the original disk image to the `template` directory for safekeeping.
 
 ###build-info.plist
+
+Next, we need to specify the `identifier`, `name` and `version` of our package in the `build-info.plist`.
 
 ```xml
 
@@ -37,11 +39,11 @@ Download and install the latest version of [Firefox](https://www.mozilla.org/fir
 	<key>distribution_style</key>
 	<false/>
 	<key>identifier</key>
-	<string>com.example.pkg.Package</string>
+	<string>org.mozilla.pkg.Firefox</string>
 	<key>install_location</key>
 	<string>/</string>
 	<key>name</key>
-	<string>Package.pkg</string>
+	<string>Firefox.pkg</string>
 	<key>ownership</key>
 	<string>recommended</string>
 	<key>postinstall_action</key>
@@ -49,7 +51,7 @@ Download and install the latest version of [Firefox](https://www.mozilla.org/fir
 	<key>suppress_bundle_relocation</key>
 	<true/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>50.1.0</string>
 </dict>
 </plist>
 
