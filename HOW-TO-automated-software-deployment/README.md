@@ -5,4 +5,4 @@ When we began implementing [JAMF Pro](https://www.jamf.com/products/jamf-pro/) i
 - Must be able to deploy software.
 - Must be able to update software.
 - Must be able to remove software.
-- Must be mostly automated with little tech interaction.
+- Must be automated with little administrator interaction.
