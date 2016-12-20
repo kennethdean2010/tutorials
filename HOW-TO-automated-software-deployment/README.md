@@ -78,7 +78,7 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 
 Now that we have all of the components in place for our automated software deployment setup, let's take a look at how we would use it in practice for each of our deployment needs.
 
-###Deploy Software
+###Deploy New Software
 
 To deploy software to a particular workstation, simply assign it to the `Firefox` Static Computer Group.
 
