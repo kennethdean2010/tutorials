@@ -11,7 +11,7 @@ Thankfully, with a little bit of planning, we were able to meet all of these req
 
 ##Prerequisites
 
-Please complete the [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) tutorial before proceeding.
+Please complete the tutorial [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
 
 ##Static Computer Group
 
