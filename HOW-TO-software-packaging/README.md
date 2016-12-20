@@ -133,7 +133,3 @@ sudo sh build-package.sh
 ```
 
 You can now find `Firefox.pkg` located in your project's `build` directory.
-
-###What's Next?
-
-Be sure to check out be sure to check out [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for tips on deploying your package using JAMF.
