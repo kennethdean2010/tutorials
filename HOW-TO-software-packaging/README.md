@@ -87,7 +87,7 @@ buildPackage
 
 ###remove_Firefox.sh
 
-While it may not be necessary in every environment, I do like the ability to clean up after myself by only removing those things that my package left behind. Taking the time now to create an un-install script may ultimately save you hours in the long run should you ever have the need to recall a package.
+While it may not be necessary in every environment, I do like the ability to clean up after myself by only removing those things that my package left behind. Taking the time now to create an un-install script may save you hours in the long run should you ever have the need to recall a package.
 
 Rename `remove_Package.sh` to `remove_Firefox.sh` and add the commands as illustrated below.
 
