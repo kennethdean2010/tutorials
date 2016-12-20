@@ -9,17 +9,13 @@
 In an effort to keep things organized, I've adopted the following directory structure on our package repository. This also allows us the flexibility to maintain multiple versions without needing to rename the packages themselves.
 
 ```
-
 /Vendor/Package/Version/Package/...
-
 ```
 
 In this instance, rename the directory structure contained in `munki-pkg-template.zip` as illustrated below.
 
 ```
-
 /Mozilla/Firefox/50.1.0/Firefox/...
-
 ```
 
 ###Download Firefox
