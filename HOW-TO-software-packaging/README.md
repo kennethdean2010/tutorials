@@ -87,6 +87,10 @@ buildPackage
 
 ###remove_Firefox.sh
 
+While it may not be necessary in every environment, I do like the ability to clean up after myself by only removing those things that my package left behind. Taking a few moments now to create an un-install script can ultimately save you hours in the long run should you ever need to recall a package.
+
+Rename `remove_Package.sh` to `remove_Firefox.sh` and add the commands as illustrated below.
+
 ```bash
 
 #!/bin/sh
@@ -111,7 +115,6 @@ rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
 /bin/rm $0 remove_Firefox.sh
 
 #
-
 
 ```
 
