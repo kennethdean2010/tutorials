@@ -28,7 +28,11 @@ Download and install the latest version of [Firefox](https://www.mozilla.org/fir
 
 ###build-info.plist
 
-When it comes to the `identifier`, `name` and `version` of our package, I've found it best to keep it simple.
+When it comes to the `identifier`, `name` and `version` of our package, I've found that it's best to keep it simple. In our environment we only deploy one version of an application at a time, which makes it easier to maintain consistency.
+
+Update the `build-info.plist` with the values as illustrated below.
+
+> NOTE: For more on software deployments, see [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment).
 
 ```xml
 
