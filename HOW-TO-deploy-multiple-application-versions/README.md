@@ -42,7 +42,7 @@ Create a Smart Computer Group called `remove_Numbers` with the following criteri
 
 ##Policies
 
-Because this deployment scenario calls for two separate packages to be maintained, we will need to create two separate sets of policies to handle the deployment and removal of the packages as well.
+Because this deployment scenario calls for two separate packages to be maintained, we will need to create two separate sets of policies to handle the installation and removal of the packages as well.
 
 ###Install_Numbers
 
@@ -116,4 +116,3 @@ Create a Policy called `Remove_Numbers (El Capitan)` with the following configur
 
 ##Putting It All Together
 
-END_RUN
