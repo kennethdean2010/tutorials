@@ -2,7 +2,7 @@
 
 When managing an environment that spans multiple versions of macOS, sometimes it becomes necessary to deploy two seperate versions of the same application due to OS incompatibilities. Thankfully, this can be pretty straightforward.
 
-> NOTE: For the purpose of this tutorial, we will be using Numbers as opposed to Firefox.
+> NOTE: Instead of Firefox, we will be using Numbers for this tutorial.
 
 ##Prerequisites
 
