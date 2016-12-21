@@ -50,6 +50,8 @@ sudo rm /private/var/db/receipts/com.apple.pkg.InstallOS.bom
 
 ##Static Computer Group
 
+Since we typically take a phased approach in rolling out OS upgrades in our environment, we'll need to create a Static Computer Group that a users workstation can be assigned to in order to deploy the installer.
+
 ###macOS Sierra
 
 Create a Static Computer Group called `macOS Sierra` now.
