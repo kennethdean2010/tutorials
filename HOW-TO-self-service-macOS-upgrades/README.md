@@ -1,1 +1,1 @@
-#HOW-TO-self-service-macOS-upgrades
+#self-service-macOS-upgrades
