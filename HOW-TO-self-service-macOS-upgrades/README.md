@@ -30,6 +30,12 @@ Create a Smart Computer Group called `remove_macOS Sierra` with the following cr
 
 ![remove-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/remove-macos-sierra-criteria.png)
 
+###exclude_macOS Sierra
+
+Create a Smart Computer Group called `exclude_macOS Sierra` with the following criteria now.
+
+![remove-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/exclude-macos-sierra-criteria.png)
+
 ##Policies
 
 ##Putting It All Together
