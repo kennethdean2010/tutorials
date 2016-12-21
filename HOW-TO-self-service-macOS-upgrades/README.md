@@ -4,6 +4,8 @@ We decided early on that we wanted to utilize Self Service for more intrusive ta
 
 ##Packages
 
+Since macOS installers are distributed through the App Store, we need to capture the package while it's being downloaded to a host machine.
+
 `ln /private/var/folders/.../.../com.apple.appstore/.../...pkg Desktop/Install\ macOS\ Sierra.pkg`
 
 ##Scripts
