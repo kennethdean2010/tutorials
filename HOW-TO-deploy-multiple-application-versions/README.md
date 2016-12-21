@@ -34,7 +34,7 @@ Create a Smart Computer Group called `deploy_Numbers` with the following criteri
 
 ![deploy-numbers-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/deploy-numbers-criteria.png)
 
-###deploy_Numbers
+###remove_Numbers
 
 Create a Smart Computer Group called `remove_Numbers` with the following criteria now.
 
