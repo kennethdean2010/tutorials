@@ -10,11 +10,11 @@ Please complete the tutorial [automated-software-deployment](https://github.com/
 
 ##Packages
 
-Create packages for each version of Numbers just as you had before (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the OS X El Capitan version to `Numbers_elCapitan.pkg` after-the-fact and upload both packages to your JAMF distribution point, replacing any existing ones.
+Create packages for each version of Numbers (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the OS X El Capitan version to `Numbers_elCapitan.pkg` after-the-fact and upload both packages to your JAMF distribution point, replacing any existing ones.
 
 ##Smart Computer Groups
 
-We are again going to leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. However, we need a way of targeting a specific version of the OS.
+Again, we are going to leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. However, we will also need a way of targeting a specific version of the OS.
 
 ###exclude_OS X El Capitan
 
