@@ -4,7 +4,7 @@ We decided early on that we wanted to utilize Self Service for more intrusive ta
 
 ##Packages
 
-Since macOS is distributed through the App Store, we need to capture the package while it's being downloaded to a host machine. Begin downloading `Install macOS Sierra.app`, but pause the download part way through.
+Since macOS is distributed through the App Store, we need to capture the package while it's being downloaded to a host machine. Begin downloading `Install macOS Sierra.app` from the App Store, but pause the download part way through.
 
 Locate the installer package in the `/private/var/folders/` directory, then use the following `ln` command in Terminal to create a hard link to a file on your desktop called `Install macOS Sierra.pkg`.
 
