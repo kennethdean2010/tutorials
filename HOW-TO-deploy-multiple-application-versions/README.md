@@ -12,6 +12,14 @@ Please complete the tutorial [automated-software-deployment](https://github.com/
 
 Create packages for each version of Numbers (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the OS X El Capitan version to `Numbers_elCapitan.pkg` after-the-fact and upload both packages to your JAMF distribution point.
 
+##Static Computer Group
+
+Since Numbers is considered an "Optional" install in our environment, we'll need to create a Static Computer Group that a users workstation can be assigned to in order to deploy the software.
+
+###Numbers
+
+Create a Static Computer Group called `Numbers` now.
+
 ##Smart Computer Groups
 
 We are going to leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation, but also need a way to target a specific version of the OS.
