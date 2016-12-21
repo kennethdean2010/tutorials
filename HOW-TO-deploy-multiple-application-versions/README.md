@@ -10,14 +10,14 @@ Please complete the tutorial [automated-software-deployment](https://github.com/
 
 Just as before, we are going to leverage our existing `deploy_Numbers` Smart Computer Group to handle the logic of determining when software should be deployed or updated on a particular workstation. However, we need a way of targeting a specific version of the OS.
 
-###deploy_Firefox
+###exclude_OS X El Capitan
 
-Create a Smart Computer Group called `deploy_Firefox` with the following criteria now.
+Create a Smart Computer Group called `exclude_OS X El Capitan` with the following criteria now.
 
-![deploy-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/deploy-firefox-criteria.png)
+![exclude-os-x-el-capitan-criteria.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/exclude-os-x-el-capitan-criteria.png)
 
-###remove_Firefox
+###exclude_macOS Sierra
 
-Create a Smart Computer Group called `remove_Firefox` with the following criteria now.
+Create a Smart Computer Group called `exclude_macOS Sierra` with the following criteria now.
 
-![remove-firefox-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-automated-software-deployment/resources/remove-firefox-criteria.png)
+![exclude-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/exclude-macos-sierra-criteria.png)
