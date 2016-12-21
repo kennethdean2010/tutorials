@@ -64,6 +64,8 @@ sudo rm /private/var/db/receipts/com.apple.pkg.InstallOS.bom
 
 ```
 
+Upload both scripts and the package to your JAMF distribution point now.
+
 ##Static Computer Group
 
 Since we typically take a phased approach when rolling out OS upgrades in our environment, we'll need to create a Static Computer Group that a users workstation can be assigned to in order to deploy the installer.
