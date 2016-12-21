@@ -4,7 +4,7 @@ We decided early on that we wanted to utilize Self Service for more intrusive ta
 
 ##Packages
 
-Since installers for macOS are distributed through the App Store, we need to capture the package while it's being downloaded to a machine. Begin downloading `Install macOS Sierra.app`, but pause the download part way through.
+Since macOS is distributed through the App Store, we need to capture the package while it's being downloaded to a machine. Begin downloading `Install macOS Sierra.app`, but pause the download part way through.
 
 `ln /private/var/folders/.../.../com.apple.appstore/.../...pkg Desktop/Install\ macOS\ Sierra.pkg`
 
