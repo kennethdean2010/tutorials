@@ -30,6 +30,6 @@ Create a Smart Computer Group called `exclude_macOS Sierra` with the following c
 
 ###deploy_Numbers
 
-Update the Smart Computer Group called `deploy_Numbers` with the following criteria now.
+Create a Smart Computer Group called `deploy_Numbers` with the following criteria now.
 
 ![deploy-numbers-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/deploy-numbers-criteria.png)
