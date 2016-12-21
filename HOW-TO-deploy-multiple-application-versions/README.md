@@ -14,7 +14,7 @@ Create packages for each version of Numbers just as you had before (see [softwar
 
 ##Smart Computer Groups
 
-Just as before, we are going to leverage our existing `deploy_Numbers` Smart Computer Group to handle the logic of determining when software should be deployed or updated on a particular workstation. However, we need a way of targeting a specific version of the OS.
+We are again going to leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. However, we need a way of targeting a specific version of the OS.
 
 ###exclude_OS X El Capitan
 
