@@ -64,7 +64,7 @@ sudo rm /private/var/db/receipts/com.apple.pkg.InstallOS.bom
 
 ```
 
-Upload both scripts and the package to your JAMF distribution point now.
+Upload both of these scripts and the `Install macOS Sierra.pkg` package to your JAMF distribution point.
 
 ##Static Computer Group
 
