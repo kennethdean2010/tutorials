@@ -42,7 +42,7 @@ Create a Smart Computer Group called `remove_Numbers` with the following criteri
 
 ##Policies
 
-Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer Group, we are able to satisfy all of our initial implementation requirements just by creating two policies for managing our package.
+Because this deployment scenario calls for two separate packages to be maintained, we will need to create two separate sets of policies to handle the deployment and removal of the packages as well.
 
 ###Install_Numbers
 
@@ -79,7 +79,7 @@ Create a Policy called `Remove_Numbers` with the following configuration now.
   - [x] Targets: Specific Computers: `remove_Numbers`
   - [x] Exclusions: `exclude_OS X El Capitan`
   
-  ###Install_Numbers (El Capitan)
+###Install_Numbers (El Capitan)
 
 Create a Policy called `Install_Numbers (El Capitan)` with the following configuration now.
 
@@ -113,3 +113,7 @@ Create a Policy called `Remove_Numbers (El Capitan)` with the following configur
 - **Scope**
   - [x] Targets: Specific Computers: `remove_Numbers`
   - [x] Exclusions: `exclude_macOS Sierra`
+
+##Putting It All Together
+
+END_RUN
