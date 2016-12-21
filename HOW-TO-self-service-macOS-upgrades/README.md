@@ -38,4 +38,42 @@ Create a Smart Computer Group called `exclude_macOS Sierra` with the following c
 
 ##Policies
 
+###Install_macOS Sierra
+
+Create a Policy called `Install_macOS Sierra` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency: Ongoing
+- **Package**
+  - [x] Packages: `Install macOS Sierra.pkg`
+  - [x] Action: Install
+- **Scripts**
+  - [x] Scripts: `postinstall_Install_macOS_Sierra.sh`
+  - [x] Priority: After
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets: Specific Computers: `deploy_macOS Sierra`
+  - [x] Exclusions: `exclude_macOS Sierra`
+
+###Remove_macOS Sierra
+
+Create a Policy called `Remove_macOS Sierra` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency: Ongoing
+- **Package**
+  - [x] Packages: `Install macOS Sierra.pkg`
+  - [x] Action: Uninstall
+- **Scripts**
+  - [x] Scripts: `remove_Install_macOS_Sierra.sh`
+  - [x] Priority: After
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets: Specific Computers: `remove_macOS Sierra`
+  - [x] Exclusions: `exclude_macOS Sierra`
+
 ##Putting It All Together
