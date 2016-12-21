@@ -32,7 +32,7 @@ touch /Applications/Install\ macOS\ Sierra.app/Contents/_MASReceipt/receipt
 
 ###remove_Install_macOS_Sierra.sh
 
-As previously mentioned (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), I do like the having the ability to clean up after myself by creating an un-install script that only removes those things that my package has left behind.
+As previously mentioned (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging#remove_firefoxsh)), I do like the having the ability to clean up after myself by creating an un-install script that only removes those things that my package has left behind.
 
 [Download](https://raw.githubusercontent.com/ToplessBanana/tutorials/master/HOW-TO-self-service-macOS-upgrades/resources/remove_Install_macOS_Sierra.sh) or create `remove_Install_macOS_Sierra.sh` now.
 
