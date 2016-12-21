@@ -8,6 +8,10 @@ Please complete the tutorial [automated-software-deployment](https://github.com/
 
 > NOTE: Instead of Firefox, we will be using Numbers for this tutorial.
 
+##Packages
+
+Create packages for each version of Numbers just as before (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging), but manually re-name the OS X El Capitan version of the package to `Numbers_El_Capitan.pkg` after the fact.
+
 ##Smart Computer Groups
 
 Just as before, we are going to leverage our existing `deploy_Numbers` Smart Computer Group to handle the logic of determining when software should be deployed or updated on a particular workstation. However, we need a way of targeting a specific version of the OS.
