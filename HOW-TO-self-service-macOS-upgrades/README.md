@@ -2,7 +2,7 @@
 
 ##Packages
 
-`ln /private/var/folders/$/$/com.apple.appstore/$/$.pkg Desktop/Install\ macOS\ Sierra.pkg`
+`ln /private/var/folders/.../.../com.apple.appstore/.../...pkg Desktop/Install\ macOS\ Sierra.pkg`
 
 ##Scripts
 
