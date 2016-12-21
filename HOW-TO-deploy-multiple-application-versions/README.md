@@ -39,3 +39,77 @@ Create a Smart Computer Group called `deploy_Numbers` with the following criteri
 Create a Smart Computer Group called `remove_Numbers` with the following criteria now.
 
 ![remove-numbers-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/remove-numbers-criteria.png)
+
+##Policies
+
+Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer Group, we are able to satisfy all of our initial implementation requirements just by creating two policies for managing our package.
+
+###Install_Numbers
+
+Create a Policy called `Install_Numbers` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency: Ongoing
+- **Package**
+  - [x] Packages: `Numbers.pkg`
+  - [x] Action: Install
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets: Specific Computers: `deploy_Numbers`
+  - [x] Exclusions: `exclude_OS X El Capitan`
+
+###Remove_Numbers
+
+Create a Policy called `Remove_Numbers` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency: Ongoing
+- **Package**
+  - [x] Packages: `Numbers.pkg`
+  - [x] Action: Uninstall
+- **Scripts**
+  - [x] Scripts: `remove_Numbers.sh`
+  - [x] Priority: After
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets: Specific Computers: `remove_Numbers`
+  - [x] Exclusions: `exclude_OS X El Capitan`
+  
+  ###Install_Numbers (El Capitan)
+
+Create a Policy called `Install_Numbers (El Capitan)` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency: Ongoing
+- **Package**
+  - [x] Packages: `Numbers_elCapitan.pkg`
+  - [x] Action: Install
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets: Specific Computers: `deploy_Numbers`
+  - [x] Exclusions: `exclude_macOS Sierra`
+
+###Remove_Numbers (El Capitan)
+
+Create a Policy called `Remove_Numbers (El Capitan)` with the following configuration now.
+
+- **General**
+  - [x] Recurring Check-In
+  - [x] Execution Frequency: Ongoing
+- **Package**
+  - [x] Packages: `Numbers_elCapitan.pkg`
+  - [x] Action: Uninstall
+- **Scripts**
+  - [x] Scripts: `remove_Numbers.sh`
+  - [x] Priority: After
+- **Maintenance**
+  - [x] Update Inventory
+- **Scope**
+  - [x] Targets: Specific Computers: `remove_Numbers`
+  - [x] Exclusions: `exclude_macOS Sierra`
