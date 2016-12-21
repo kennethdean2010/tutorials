@@ -10,7 +10,7 @@ Please complete the tutorial [automated-software-deployment](https://github.com/
 
 ##Packages
 
-Create packages for each version of Numbers just as before (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually re-name the OS X El Capitan version of the package to `Numbers_elCapitan.pkg` after-the-fact and upload both packages to your JAMF distribution point.
+Create packages for each version of Numbers just as before (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the OS X El Capitan version of the package to `Numbers_elCapitan.pkg` after-the-fact and upload both packages to your JAMF distribution point.
 
 ##Smart Computer Groups
 
