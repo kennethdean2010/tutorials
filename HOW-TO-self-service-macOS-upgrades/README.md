@@ -18,12 +18,6 @@ Create a Smart Computer Group called `deploy_macOS Sierra` with the following cr
 
 ![deploy-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-sierra-criteria.png)
 
-###deploy_macOS Sierra (Self Service)
-
-Create a Smart Computer Group called `deploy_macOS Sierra (Self Service)` with the following criteria now.
-
-![deploy-macos-sierra-self-service-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-sierra-self-service-criteria.png)
-
 ###remove_macOS Sierra
 
 Create a Smart Computer Group called `remove_macOS Sierra` with the following criteria now.
@@ -35,6 +29,12 @@ Create a Smart Computer Group called `remove_macOS Sierra` with the following cr
 Create a Smart Computer Group called `exclude_macOS Sierra` with the following criteria now.
 
 ![remove-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/exclude-macos-sierra-criteria.png)
+
+###deploy_macOS Sierra (Self Service)
+
+Create a Smart Computer Group called `deploy_macOS Sierra (Self Service)` with the following criteria now.
+
+![deploy-macos-sierra-self-service-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-sierra-self-service-criteria.png)
 
 ##Policies
 
@@ -75,5 +75,23 @@ Create a Policy called `Remove_macOS Sierra` with the following configuration no
 - **Scope**
   - [x] Targets: Specific Computers: `remove_macOS Sierra`
   - [x] Exclusions: `exclude_macOS Sierra`
+  
+###macOS Sierra
+
+Create a Policy called `macOS Sierra` with the following configuration now.
+
+- **General**
+  - [x] Execution Frequency: Ongoing
+- **Files and Processes**
+  - [x] Search for Process: `Self Service`: Kill process if found
+  - [x] Execute Command: `/Applications/Install\ macOS\ Sierra.app/Contents/Resources/startosinstall --applicationpath /Applications/Install\ macOS\ Sierra.app/ --volume / --nointeraction`
+- **Scope**
+  - [x] Targets: Specific Computers: `deploy_macOS Sierra (Self Service)`
+  - [x] Exclusions: `exclude_macOS Sierra`
+- **Self Service**
+  - [x] Make the policy available in Self Service
+  - [x] Button Name: `Upgrade`
+  - [x] Description: `Update your workstation to macOS Sierra. We recommend that you begin just prior to leaving for the day.`
+  - [x] Ensure that users view the description
 
 ##Putting It All Together
