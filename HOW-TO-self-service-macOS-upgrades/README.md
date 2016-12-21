@@ -10,6 +10,8 @@ Locate the installer package in the `/private/var/folders/` directory, then use 
 
 `ln /private/var/folders/.../.../com.apple.appstore/.../...pkg Desktop/Install\ macOS\ Sierra.pkg`
 
+Resume the download in the App Store and allow it to complete.
+
 ##Scripts
 
 ###postinstall_Install_macOS_Sierra.sh
