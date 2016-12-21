@@ -2,6 +2,8 @@
 
 ##Packages
 
+`ln /private/var/folders/PATH_TO/com.apple.appstore/PACKAGE/DOWNLOAD.pkg Desktop/Install\ macOS\ Sierra.pkg`
+
 ##Scripts
 
 ###postinstall_Install_macOS_Sierra.sh
