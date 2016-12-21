@@ -3,8 +3,8 @@
 # remove_Install_macOS_Sierra.sh
 # 
 #
-# Created by Jayson Kish on 12/13/16.
-# Copyright 2016 by Dicks Sporting Goods. All rights reserved.
+# Created by Jayson Kish on 12/20/16.
+# Copyright 2016 by Topless Banana. All rights reserved.
 #
 # Version 12.2.03
 #
