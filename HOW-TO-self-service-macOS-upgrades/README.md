@@ -137,3 +137,5 @@ Create a Policy called `macOS Sierra` with the following configuration now.
   - [x] Ensure that users view the description
 
 ##Putting It All Together
+
+![macos-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-sierra-self-service.png)
