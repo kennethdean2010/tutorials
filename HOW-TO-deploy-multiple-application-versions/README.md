@@ -124,3 +124,4 @@ Create a Policy called `Remove_Numbers (El Capitan)` with the following configur
 
 ##Putting It All Together
 
+Now that we have all of the components in place for managing two separate versions of Numbers in our environment, simply assigning a users workstation to the `Numbers` Static Computer Group will ensure that the proper version is installed.
