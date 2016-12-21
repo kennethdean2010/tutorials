@@ -1,11 +1,11 @@
 #automated-software-deployment
 
-When we began implementing [JAMF Pro](https://www.jamf.com/products/jamf-pro/) in our development and production environments, we had a very specific set of requirements in mind for policy based software deployments.
+When we began implementing [JAMF Pro](https://www.jamf.com/products/jamf-pro/) in our environment, we had a very specific set of requirements in mind for policy based software deployments.
 
 - Must be able to deploy new software.
 - Must be able to update software.
 - Must be able to remove software.
-- Must be automated with little administrator interaction.
+- Must be automated (minimal administrator interaction).
 
 Thankfully, with a little bit of planning, we were able to meet all of these requirements successfully.
 
@@ -15,7 +15,7 @@ Please complete the tutorial [software-packaging](https://github.com/ToplessBana
 
 ##Static Computer Group
 
-Most of our packaged software falls into the "Optional" category. This means that it is deployed to a users workstation upon request only, as opposed to being installed during our provisioning process. As a result, we've created Static Computer Groups for each one of our available software titles.
+Most of our packaged software falls into the "Optional" category. This means that it is deployed to a users workstation upon request, as opposed to being installed during our provisioning process. To accomodate this, we've created Static Computer Groups for each one of our available software titles.
 
 ###Firefox
 
@@ -23,7 +23,7 @@ Create a Static Computer Group called `Firefox` now.
 
 ##Smart Computer Group
 
-We leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. Each of our policies will be scoped to a particular Smart Computer Group.
+We leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. Most of our policies are scoped to a particular Smart Computer Group.
 
 ###deploy_Firefox
 
@@ -39,7 +39,7 @@ Create a Smart Computer Group called `remove_Firefox` with the following criteri
 
 ##Policies
 
-Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer Group, we are able to create just two policies for managing our package that satisfies all of our initial implementation requirements.
+Because our package is simply called `Firefox.pkg` and the version criteria is specified in the `deploy_Firefox` Smart Computer Group, we are able to satisfy all of our initial implementation requirements just by creating two policies for managing our package.
 
 ###Install_Firefox
 
@@ -76,7 +76,7 @@ Create a Policy called `Remove_Firefox` with the following configuration now.
 
 ##Putting It All Together
 
-Now that we have all of the components in place for our automated software deployment setup, let's take a look at how we would use it in practice for each of our deployment needs.
+Now that we have all of the components in place for our automated software deployment setup, let's take a look at how we would use them in practice to cover each of our deployment scenarios.
 
 ###Deploy New Software
 
