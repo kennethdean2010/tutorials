@@ -21,3 +21,9 @@ Create a Smart Computer Group called `exclude_OS X El Capitan` with the followin
 Create a Smart Computer Group called `exclude_macOS Sierra` with the following criteria now.
 
 ![exclude-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/exclude-macos-sierra-criteria.png)
+
+###deploy_Numbers
+
+Lastly, update the Smart Computer Group called `deploy_Numbers` with the following criteria now.
+
+![deploy-numbers-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-deploy-multiple-application-versions/resources/deploy-numbers-criteria.png)
