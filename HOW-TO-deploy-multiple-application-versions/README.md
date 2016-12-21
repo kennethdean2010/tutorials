@@ -8,7 +8,7 @@ Please complete the tutorial [automated-software-deployment](https://github.com/
 
 ##Smart Computer Group
 
-Just as before, we are going to leverage our existing `deploy_Numbers` Smart Computer Group to handle the logic of determining when software should be deployed or updated on a particular workstation. Before this however, we also need a logical way of targeting a specific version of the OS.
+Just as before, we are going to leverage our existing `deploy_Numbers` Smart Computer Group to handle the logic of determining when software should be deployed or updated on a particular workstation. However, we also need a logical way of targeting a specific version of the OS.
 
 ###deploy_Firefox
 
