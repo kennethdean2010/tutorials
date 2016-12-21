@@ -14,6 +14,8 @@ Then, resume the download in the App Store and allow it to complete.
 
 ##Scripts
 
+Since receipts for the App Store are not written until _after_ the application is installed, we will want to create a script to create our own once we've deployed out package. This isn't a requirement, but I've found that some applications will not function properly unless the presence of this file is detected.
+
 ###postinstall_Install_macOS_Sierra.sh
 
 ```bash
