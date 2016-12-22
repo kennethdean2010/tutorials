@@ -76,6 +76,8 @@ Create a Static Computer Group called `macOS Sierra` now.
 
 ##Smart Computer Groups
 
+As previously mentioned (see [automated-software-deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)), we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. We also need a way to target a specific version of the OS.
+
 ###deploy_macOS Sierra
 
 Create a Smart Computer Group called `deploy_macOS Sierra` with the following criteria now.
