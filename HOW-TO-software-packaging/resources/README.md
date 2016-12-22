@@ -1,1 +1,1 @@
-Resources for HOW-TO-automated-software-deployment.
+Resources for HOW-TO-software-packaging.
