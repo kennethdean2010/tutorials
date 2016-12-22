@@ -164,6 +164,6 @@ Create a Policy called `macOS Sierra` with the following configuration now.
 
 ##Putting It All Together
 
-Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS Sierra` Static Computer Group. Once the `Install_macOS Sierra` policy has executed, the user will then see the `macOS Sierra` policy in Self Service.
+Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS Sierra` Static Computer Group. Once the package has deployed, the user will then see the `macOS Sierra` policy in Self Service.
 
 ![macos-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-sierra-self-service.png)
