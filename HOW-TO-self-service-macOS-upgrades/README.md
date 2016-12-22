@@ -169,3 +169,4 @@ Now that we have all of the components in place for our Self Service macOS upgra
 ![macos-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-sierra-self-service.png)
 
 > NOTE: There are two additional benefits to this approach. First, should a new version of Install macOS Sierra.app be released, updating existing deployments to the new version is as simple as replacing the package on the JAMF distribution point and updating the version criteria in the deploy_macOS Sierra Smart Computer Group.
+> The second is that it's easy to force the macOS upgrade to complete on the users workstation simply by changing the Trigger to "Recurring Check-In" on the macOS Sierra policy and removing it from Self Service.
