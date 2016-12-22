@@ -167,3 +167,5 @@ Create a Policy called `macOS Sierra` with the following configuration now.
 Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS Sierra` Static Computer Group. Once the package has deployed, the user will then see the `macOS Sierra` policy in Self Service.
 
 ![macos-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-sierra-self-service.png)
+
+> NOTE: There are two additional benefits to this approach. First, should a new version of Install macOS Sierra.app be released, updating existing deployments to the new version is as simple as replacing the package on the JAMF distribution point and updating the version criteria in the deploy_macOS Sierra Smart Computer Group.
