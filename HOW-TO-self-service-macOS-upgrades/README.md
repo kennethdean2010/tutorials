@@ -104,6 +104,8 @@ Create a Smart Computer Group called `deploy_macOS Sierra (Self Service)` with t
 
 ##Policies
 
+For this deployment scenario, we will still create two policies to handle the installation and removal of the `Install macOS Sierra.pkg` package, but we’ll also create a third policy specifically for Self Service.
+
 ###Install_macOS Sierra
 
 Create a Policy called `Install_macOS Sierra` with the following configuration now.
