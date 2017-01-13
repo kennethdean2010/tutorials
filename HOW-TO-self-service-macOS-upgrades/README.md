@@ -152,7 +152,7 @@ Create a Policy called `macOS Sierra` with the following configuration now.
   - [x] Execution Frequency: Ongoing
 - **Files and Processes**
   - [x] Search for Process: `Self Service`: Kill process if found
-  - [x] Execute Command: `/Applications/Install\ macOS\ Sierra.app/Contents/Resources/startosinstall --applicationpath /Applications/Install\ macOS\ Sierra.app/ --volume / --nointeraction`
+  - [x] Execute Command: `/Applications/Install\ macOS\ Sierra.app/Contents/Resources/startosinstall --applicationpath /Applications/Install\ macOS\ Sierra.app/ --volume / --nointeraction | /Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper -windowType hud -lockhud -heading "Self Service" -description "The upgrade to macOS Sierra is now in progress. Do not use this system until the upgrade is complete." -icon /Applications/Install\ macOS\ Sierra.app/Contents/Resources/InstallAssistant.icns`
 - **Scope**
   - [x] Targets: Specific Computers: `deploy_macOS Sierra (Self Service)`
   - [x] Exclusions: `exclude_macOS Sierra`
