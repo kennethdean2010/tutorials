@@ -1,4 +1,4 @@
-# software-packaging
+# Software Packaging
 
 [Munkipkg](https://www.munki.org/munki-pkg/) is a very powerful and easy to use packaging tool for the macOS platform. And since it's command-line based, it's even easier to script. In this tutorial, we are going to create a simple package for the Firefox browser. Be sure to download my project template [here](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-software-packaging/resources/munki-pkg-template.zip?raw=true) before getting started.
 
@@ -15,7 +15,7 @@ In an effort to keep things organized, I've adopted the following directory stru
 In this instance, rename the directory structure contained in `munki-pkg-template.zip` as illustrated below.
 
 ```
-/Mozilla/Firefox/50.1.0/Firefox/...
+/Mozilla/Firefox/57.0.3/Firefox/...
 ```
 
 ## Download Firefox
@@ -49,7 +49,7 @@ Update `build-info.plist` with the values as illustrated below.
 	<key>suppress_bundle_relocation</key>
 	<true/>
 	<key>version</key>
-	<string>50.1.0</string>
+	<string>57.0.3</string>
 </dict>
 </plist>
 
@@ -98,10 +98,10 @@ Rename `remove_Package.sh` to `remove_Firefox.sh` and add the commands as illust
 # remove_Firefox.sh
 # 
 #
-# Created by Jayson Kish on 12/20/16.
-# Copyright 2016 by Topless Banana. All rights reserved.
+# Created by Jayson Kish on 01/04/18.
+# Copyright 2018 by Topless Banana. All rights reserved.
 #
-# Version 50.1.0
+# Version 57.0.3
 #
 #
 #
@@ -123,7 +123,7 @@ rm /private/var/db/receipts/org.mozilla.pkg.Firefox.bom
 Now that we've installed Firefox and prepared our Munkipkg project, we're ready to build our package. First, launch Terminal and `cd` into the project directory (assuming that it's located on your Desktop).
 
 ```
-cd Desktop/Mozilla/Firefox/50.1.0/Firefox/
+cd Desktop/Mozilla/Firefox/57.0.3/Firefox/
 ```
 
 Finally, execute the `build-package.sh` script to build the package.
