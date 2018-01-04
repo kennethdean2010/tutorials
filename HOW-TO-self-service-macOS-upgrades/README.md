@@ -1,14 +1,14 @@
 # Self Service macOS Upgrades
 
-We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing software deployment approach afforded us (see [automated-software-deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)).
+We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing software deployment approach afforded us (see [Automated Software Deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)).
 
 ## Prerequisites
 
-Please complete the tutorial [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
+Please complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
 
 ## Smart Computer Groups
 
-As previously mentioned (see [automated-software-deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)), we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. We also need a way to target a specific version of macOS.
+As previously mentioned (see [Automated Software Deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)), we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. We also need a way to target a specific version of macOS.
 
 ### deploy_macOS High Sierra
 
