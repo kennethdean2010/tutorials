@@ -7,7 +7,7 @@ Sadly, not every feature is managable using Configuration Profiles at this point
 
 ## Scripts
 
-Upload the following script to your JAMF Pro repository now. Depending on your needs, you may want to customize which actions the script should perform and how it performs them.
+Upload the following [script](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-provisioning-dep-enrolled-workstations/resources/configure_Workstation.sh) to your JAMF Pro repository now. Depending on your needs, you may want to customize which actions the script should perform and how it performs them.
 
 ### configure_Workstation.sh
 
