@@ -6,7 +6,7 @@ When managing an environment that spans multiple versions of macOS, sometimes it
 
 Please complete the tutorial [Automated Software Deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) before proceeding.
 
-> NOTE: Instead of Firefox, we will be using Server for this tutorial
+> NOTE: Instead of Firefox, we will be using Server for this tutorial.
 
 ## Packages
 
