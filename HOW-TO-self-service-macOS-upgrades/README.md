@@ -1,171 +1,101 @@
-# self-service-macOS-upgrades
+# Self Service macOS Upgrades
 
 We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing software deployment approach afforded us (see [automated-software-deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)).
 
-## Packages
+## Prerequisites
 
-Since macOS is distributed through the App Store, we need to capture the package while it's being downloaded to a host machine. Begin downloading `Install macOS Sierra.app`, but pause the download part way through.
-
-Locate the installer package in the `/private/var/folders/` directory, then use the following `ln` command in Terminal to create a hard link to a file on your desktop called `Install macOS Sierra.pkg`.
-
-`ln /private/var/folders/.../.../com.apple.appstore/.../...pkg Desktop/Install\ macOS\ Sierra.pkg`
-
-Then, resume the download in the App Store and allow it to complete.
-
-## Scripts
-
-Since receipts for the App Store are not written until _after_ the application is installed, we will want to create a script to create our own once we've deployed our package. While it may not be required in all cases, I've found that some applications will not function properly unless the presence of this file is detected.
-
-[Download](https://raw.githubusercontent.com/ToplessBanana/tutorials/master/HOW-TO-self-service-macOS-upgrades/resources/postinstall_Install_macOS_Sierra.sh) or create `postinstall_Install_macOS_Sierra.sh` now.
-
-### postinstall_Install_macOS_Sierra.sh
-
-```bash
-
-#!/bin/sh
-
-mkdir /Applications/Install\ macOS\ Sierra.app/Contents/_MASReceipt/
-
-touch /Applications/Install\ macOS\ Sierra.app/Contents/_MASReceipt/receipt
-
-```
-
-### remove_Install_macOS_Sierra.sh
-
-As previously mentioned (see [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging#remove_firefoxsh)), I do like the having the ability to clean up after myself by creating an un-install script that only removes those things that my package has left behind.
-
-[Download](https://raw.githubusercontent.com/ToplessBanana/tutorials/master/HOW-TO-self-service-macOS-upgrades/resources/remove_Install_macOS_Sierra.sh) or create `remove_Install_macOS_Sierra.sh` now.
-
-```bash
-
-#!/bin/sh
-#
-# remove_Install_macOS_Sierra.sh
-# 
-#
-# Created by Jayson Kish on 12/20/16.
-# Copyright 2016 by Topless Banana. All rights reserved.
-#
-# Version 12.2.03
-#
-#
-#
-
-
-sudo rm -rf /Applications/Install\ macOS\ Sierra.app
-sudo rm /private/var/db/receipts/com.apple.pkg.InstallOS.plist
-sudo rm /private/var/db/receipts/com.apple.pkg.InstallOS.bom
-
-#
-
-/bin/rm $0 remove_Install_macOS_Sierra.sh
-
-#
-
-```
-
-Upload both of these scripts and the `Install macOS Sierra.pkg` package to your JAMF distribution point.
-
-## Static Computer Group
-
-Since we typically take a phased approach when rolling out OS upgrades in our environment, we'll need to create a Static Computer Group that a users workstation can be assigned to in order to deploy the installer.
-
-### macOS Sierra
-
-Create a Static Computer Group called `macOS Sierra` now.
+Please complete the tutorial [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
 
 ## Smart Computer Groups
 
-As previously mentioned (see [automated-software-deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)), we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. We also need a way to target a specific version of the OS.
+As previously mentioned (see [automated-software-deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)), we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. We also need a way to target a specific version of macOS.
 
-### deploy_macOS Sierra
+### deploy_macOS High Sierra
 
-Create a Smart Computer Group called `deploy_macOS Sierra` with the following criteria now.
+Create a Smart Computer Group called `deploy_macOS High Sierra` with the following criteria now.
 
-![deploy-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-sierra-criteria.png)
+![deploy-macos-high-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-high-sierra-criteria.png)
 
-### remove_macOS Sierra
+### remove_macOS High Sierra
 
-Create a Smart Computer Group called `remove_macOS Sierra` with the following criteria now.
+Create a Smart Computer Group called `remove_macOS High Sierra` with the following criteria now.
 
-![remove-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/remove-macos-sierra-criteria.png)
+![remove-macos-high-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/remove-macos-high-sierra-criteria.png)
 
-### exclude_macOS Sierra
+### exclude_macOS High Sierra
 
-Create a Smart Computer Group called `exclude_macOS Sierra` with the following criteria now.
+Create a Smart Computer Group called `exclude_macOS High Sierra` with the following criteria now.
 
-![remove-macos-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/exclude-macos-sierra-criteria.png)
+![remove-macos-high-sierra-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/exclude-macos-high-sierra-criteria.png)
 
-### deploy_macOS Sierra (Self Service)
+### deploy_macOS High Sierra (Self Service)
 
-Create a Smart Computer Group called `deploy_macOS Sierra (Self Service)` with the following criteria now.
+Create a Smart Computer Group called `deploy_macOS High Sierra (Self Service)` with the following criteria now.
 
-![deploy-macos-sierra-self-service-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-sierra-self-service-criteria.png)
+![deploy-macos-high-sierra-self-service-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/deploy-macos-high-sierra-self-service-criteria.png)
 
 ## Policies
 
-For this deployment scenario, we will still create two policies to handle the installation and removal of the `Install macOS Sierra.pkg` package, but we’ll also create a third policy specifically for Self Service.
+For this deployment scenario, we will still create two policies to handle the installation and removal of the `Install macOS High Sierra.pkg` package, but we’ll also create a third policy specifically for Self Service.
 
-### Install_macOS Sierra
+### Install_macOS High Sierra
 
-Create a Policy called `Install_macOS Sierra` with the following configuration now.
+Create a Policy called `Install_macOS High Sierra` with the following configuration now.
 
 - **General**
   - [x] Recurring Check-In
   - [x] Execution Frequency: Ongoing
 - **Package**
-  - [x] Packages: `Install macOS Sierra.pkg`
+  - [x] Packages: `Install macOS High Sierra.pkg`
   - [x] Action: Install
-- **Scripts**
-  - [x] Scripts: `postinstall_Install_macOS_Sierra.sh`
-  - [x] Priority: After
 - **Maintenance**
   - [x] Update Inventory
 - **Scope**
-  - [x] Targets: Specific Computers: `deploy_macOS Sierra`
-  - [x] Exclusions: `exclude_macOS Sierra`
+  - [x] Targets: Specific Computers: `deploy_macOS High Sierra`
+  - [x] Exclusions: `exclude_macOS High Sierra`
 
-### Remove_macOS Sierra
+### Remove_macOS High Sierra
 
-Create a Policy called `Remove_macOS Sierra` with the following configuration now.
+Create a Policy called `Remove_macOS High Sierra` with the following configuration now.
 
 - **General**
   - [x] Recurring Check-In
   - [x] Execution Frequency: Ongoing
 - **Package**
-  - [x] Packages: `Install macOS Sierra.pkg`
+  - [x] Packages: `Install macOS High Sierra.pkg`
   - [x] Action: Uninstall
 - **Scripts**
-  - [x] Scripts: `remove_Install_macOS_Sierra.sh`
+  - [x] Scripts: `remove_Install_macOS_High_Sierra.sh`
   - [x] Priority: After
 - **Maintenance**
   - [x] Update Inventory
 - **Scope**
-  - [x] Targets: Specific Computers: `remove_macOS Sierra`
-  - [x] Exclusions: `exclude_macOS Sierra`
+  - [x] Targets: Specific Computers: `remove_macOS High Sierra`
+  - [x] Exclusions: `exclude_macOS High Sierra`
   
-### macOS Sierra
+### macOS High Sierra
 
-Create a Policy called `macOS Sierra` with the following configuration now.
+Create a Policy called `macOS High Sierra` with the following configuration now.
 
 - **General**
   - [x] Execution Frequency: Ongoing
 - **Files and Processes**
   - [x] Search for Process: `Self Service`: Kill process if found
-  - [x] Execute Command: `/Applications/Install\ macOS\ Sierra.app/Contents/Resources/startosinstall --applicationpath /Applications/Install\ macOS\ Sierra.app/ --volume / --nointeraction | /Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper -windowType hud -lockhud -heading "Self Service" -description "The upgrade to macOS Sierra is now in progress. Do not use this system until the upgrade is complete." -icon /Applications/Install\ macOS\ Sierra.app/Contents/Resources/InstallAssistant.icns`
+  - [x] Execute Command: `/Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/startosinstall --agreetolicense --rebootdelay 0 | /Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper -windowType fs -heading "The upgrade to macOS High Sierra is now in progress." -description "You may be prompted to enter your password upon restart." -icon /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/ProductPageIcon.icns`
 - **Scope**
-  - [x] Targets: Specific Computers: `deploy_macOS Sierra (Self Service)`
-  - [x] Exclusions: `exclude_macOS Sierra`
+  - [x] Targets: Specific Computers: `deploy_macOS High Sierra (Self Service)`
+  - [x] Exclusions: `exclude_macOS High Sierra`
 - **Self Service**
   - [x] Make the policy available in Self Service
+  - [x] Self Service Display Name: `macOS High Sierra`
   - [x] Button Name: `Upgrade`
-  - [x] Description: `Update your workstation to macOS Sierra. We recommend that you begin just prior to leaving for the day.`
+  - [x] Description: `Update your workstation to macOS High Sierra. This process may take awhile, so we recommend that you begin just prior to leaving for the day.`
   - [x] Ensure that users view the description
 
 ## Putting It All Together
 
-Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS Sierra` Static Computer Group. Once the package has deployed, the user will then see the `macOS Sierra` policy in Self Service.
+Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS High Sierra` Static Computer Group. Once the package has deployed, the user will then see the `macOS High Sierra` policy in Self Service.
 
-![macos-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-sierra-self-service.png)
+![macos-high-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-high-sierra-self-service.png)
 
-> NOTE: There are two additional benefits to this approach. First, should a new version of Install macOS Sierra.app be released, updating existing deployments to the new version is as simple as replacing the package on the JAMF distribution point and updating the version criteria in the deploy_macOS Sierra Smart Computer Group. The second is that it's easy to force the macOS upgrade to complete on the users workstation simply by changing the Trigger to "Recurring Check-In" on the macOS Sierra policy and removing it from Self Service.
+> NOTE: There are two additional benefits to this approach. First, should a new version of Install macOS High Sierra.app be released, updating existing deployments to the new version is as simple as replacing the package on the JAMF distribution point and updating the version criteria in the deploy_macOS High Sierra Smart Computer Group. The second is that it's easy to force the macOS upgrade to complete on the users workstation simply by changing the Trigger to "Recurring Check-In" on the macOS High Sierra policy and removing it from Self Service.
