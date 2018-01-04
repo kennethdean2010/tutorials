@@ -1,4 +1,4 @@
-# automated-software-deployment
+# Automated Software Deployment
 
 When we began implementing [JAMF Pro](https://www.jamf.com/products/jamf-pro/) in our environment, we had a very specific set of requirements in mind for policy based software deployments.
 
@@ -11,7 +11,7 @@ Thankfully, with a little bit of planning, we were able to meet all of these req
 
 ## Prerequisites
 
-Please complete the tutorial [software-packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
+Please complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
 
 ## Static Computer Group
 
