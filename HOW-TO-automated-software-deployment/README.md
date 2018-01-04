@@ -7,7 +7,7 @@ When we began implementing [JAMF Pro](https://www.jamf.com/products/jamf-pro/) i
 - Must be able to remove software.
 - Must be automated (minimal administrator interaction).
 
-Thankfully, with a little bit of planning, we were able to meet all of these requirements successfully
+Thankfully, with a little bit of planning, we were able to meet all of these requirements successfully.
 
 ## Prerequisites
 
