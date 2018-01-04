@@ -55,7 +55,7 @@ Update `build-info.plist` with the values as illustrated below.
 
 ```
 
-> NOTE: See [automated-software-deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information on deployments and upgrades.
+> NOTE: See [Automated Software Deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information on deployments and upgrades.
 
 ### build-package.sh
 
