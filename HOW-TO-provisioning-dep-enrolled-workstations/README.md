@@ -120,9 +120,9 @@ Create a Policy called `Install_Device Enrollment Program` with the following co
   - [x] Scripts: `configure_Workstation.sh`
   - [x] Priority: After
   - [x] Parameter 4: `$adminUser`
-  - [x] Parameter 4: `$adminPassword`
-  - [x] Parameter 4: `$userName`
-  - [x] Parameter 4: `$userPassword`
+  - [x] Parameter 5: `$adminPassword`
+  - [x] Parameter 6: `$userName`
+  - [x] Parameter 7: `$userPassword`
 - **Maintenance**
   - [x] Update Inventory
 - **Scope**
