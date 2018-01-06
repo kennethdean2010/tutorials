@@ -146,4 +146,4 @@ Create a Policy called `Enable FileVault` with the following configuration now.
 
 ## Putting It All Together
 
-Now that we have all of the components in place, users will see the Enable FileVault policy in Self Service.
+Now that we have all of the components in place, users will see the `Enable FileVault` policy in Self Service.
