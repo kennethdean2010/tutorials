@@ -3,7 +3,6 @@
 We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing software deployment approach afforded us (see [Automated Software Deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)).
 
 > **IMPORTANT NOTE FOR FILEVAULT USERS**
-
 > Apple has confirmed that user accounts _**will not**_ receive SecureToken during the upgrade to macOS High Sierra if they are not already enabled for FileVault prior to the upgrade. If your only administrator account is not a FileVault enabled user, please add it using `fdesetup add -user` before proceeding.
 
 ## Prerequisites
