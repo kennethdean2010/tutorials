@@ -11,3 +11,5 @@ A collection of tutorials about automating the management of macOS using [JAMF P
 [Deploy Multiple Application Versions](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-deploy-multiple-application-versions)
 
 [Self Service macOS Upgrades](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-self-service-macOS-upgrades)
+
+[Self Service FileVault And SecureToken](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-filevault-and-securetoken/README.md)
