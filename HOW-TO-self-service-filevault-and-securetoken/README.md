@@ -39,11 +39,11 @@ EOT)
 
 # Enables SecureToken for the currently logged in user account.
 enableSecureToken() {
-    sudo sysadminctl -adminUser $adminUser -adminPassword $adminPassword -secureTokenOn $userName -password $userPassword1
+    sudo sysadminctl -adminUser $adminUser -adminPassword $adminPassword -secureTokenOn $userName1 -password $userPassword1
 }
 
 # Creates a PLIST containing the necessary administrator and user credentials.
-createPlist() {
+createPlist() {p
     echo '<?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
