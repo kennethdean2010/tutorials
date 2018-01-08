@@ -78,8 +78,8 @@ enableFileVault() {
 # SecureToken enabled users are automatically added to the list of Filevault enabled users when FileVault first is enabled.
 # Removes the specified user(s) from the list of FileVault enabled users.
 removeUser() {
-    sudo fdesetup remove -user $adminUser
     sudo fdesetup remove -user $userName2
+    sudo fdesetup remove -user $adminUser
 }
 
 # Update the preboot role volume's subject directory.
