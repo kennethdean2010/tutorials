@@ -79,7 +79,6 @@ enableFileVault() {
 # Removes the specified user(s) from the list of FileVault enabled users.
 removeUser() {
     sudo fdesetup remove -user $userName2
-    sudo fdesetup remove -user $adminUser
 }
 
 # Update the preboot role volume's subject directory.
