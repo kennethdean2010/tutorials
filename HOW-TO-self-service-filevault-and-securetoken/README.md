@@ -107,7 +107,13 @@ cleanUp
 
 ## Smart Computer Groups
 
-For this example, we'll be scoping our policy to `All Managed Clients`. However, there are some workstations running macOS Sierra (10.12.6) in our environment that we'll want to exclude.
+For this example, we'll be scoping our policy to include only portable workstations. Additionally, there are some workstations running macOS Sierra (10.12.6) in our environment that we'll want to exclude.
+
+### deploy_FileVault Encryption
+
+Create a Smart Computer Group called `deploy_FileVault Encryption` with the following criteria now.
+
+![deploy-filevault-encryption-criteria](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-filevault-and-securetoken/resources/deploy-filevault-encryption-criteria.png)
 
 ### exclude_macOS Sierra
 
