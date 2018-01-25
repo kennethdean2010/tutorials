@@ -28,7 +28,11 @@ userPassword="$7"
 # Create a standard local user account.
 createLocalUserAccounts() {
     if [ "$(dscl . list /Users | grep "$userName")" == "" ]; then
-        sysadminctl -adminUser $adminUser -adminPassword $adminPassword -addUser $userName -password $userPassword -picture /Library/User\ Pictures/Animals/Parrot.tif
+        if [ "$(sw_vers | grep ProductVersion | cut -c 17-21 | /usr/bin/awk "{ print }")" == "10.13" ]; then
+            sysadminctl -adminUser $adminUser -adminPassword $adminPassword -addUser $userName -password $userPassword -picture /Library/User\ Pictures/Animals/Parrot.tif
+        else
+            sysadminctl -addUser $userName -password $userPassword -picture /Library/User\ Pictures/Animals/Parrot.tif
+        fi
     fi
 }
 
