@@ -2,8 +2,6 @@
 
 We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing [software deployment approach](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) afforded us.
 
-> **WARNING**
-
 > Please read the _Upgrading From macOS Sierra_ section of [Misadventures With SecureToken](http://toplessbanana.com/posts/misadventures-with-securetoken) before upgrading FileVault enabled systems to macOS High Sierra.
 
 ## Prerequisites
