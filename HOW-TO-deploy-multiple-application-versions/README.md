@@ -6,8 +6,6 @@ When managing an environment that spans multiple versions of macOS, sometimes it
 
 Please complete the tutorial [Automated Software Deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) before proceeding.
 
-> NOTE: Instead of Firefox, we will be using Server for this tutorial.
-
 ## Packages
 
 Create packages for each version of Server (see [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the macOS Sierra version to `Server_Sierra.pkg` after-the-fact and upload both packages to your JAMF distribution point.
