@@ -11,7 +11,7 @@ Thankfully, with a little bit of planning, we were able to meet all of these req
 
 ## Prerequisites
 
-Please complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
+Complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) and upload your package and scripts to JAMF Pro before proceeding.
 
 ## Static Computer Group
 
