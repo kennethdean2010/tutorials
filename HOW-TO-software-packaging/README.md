@@ -55,8 +55,6 @@ Update `build-info.plist` with the values as illustrated below.
 
 ```
 
-> NOTE: See [Automated Software Deployments](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) for more information on deployments and upgrades.
-
 ### build-package.sh
 
 The purpose of good automation is to do something repeatedly in a controlled, predictable fashion. Therefore the purpose of this script is to do three things: _Create the folders. Populate the payload. Build the package._
