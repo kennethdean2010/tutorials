@@ -42,8 +42,4 @@ The following script was deployed to ```/Library/Scripts/```.
 rm -rf /Users/$USER/Library/Fonts/*
 ```
 
-Using the LaunchAgent, rather than simply changing directory permissions, ensures that the script executes for every user that logs into the machine. For your convinience, you can download a pre-built package for this solution below.
-
-[System_Font_Policy.pkg.zip](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-manage-user-installed-fonts/resources/System_Font_Policy.pkg.zip)
-
-MD5 [be55cdf8d89eecc7b6bbc18d3109a66d]
+Using the LaunchAgent, rather than simply changing directory permissions, ensures that the script executes for every user that logs into the machine. For your convinience, you can download a pre-built package for this solution [here](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-manage-user-installed-fonts/resources/System_Font_Policy.pkg.zip).
