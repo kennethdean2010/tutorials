@@ -10,7 +10,7 @@ Complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tuto
 
 ## Smart Computer Groups
 
-As previously mentioned, we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation. We also need a way to target a specific version of macOS.
+As previously mentioned, we leverage Smart Computer Groups to handle the logic of determining when software should be deployed, updated or removed from a particular workstation.
 
 ### deploy_macOS High Sierra
 
