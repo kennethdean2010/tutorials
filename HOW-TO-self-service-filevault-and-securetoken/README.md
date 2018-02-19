@@ -153,4 +153,4 @@ Create a Policy called `Enable FileVault` with the following configuration now.
 
 Now that we have all of the components in place, users will see the `Enable FileVault` policy in Self Service.
 
-![enable-filevault-self-service.png](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-self-service-filevault-and-securetoken/resources/enable-filevault-self-service.png)
+![enable-filevault-self-service.png](https://raw.githubusercontent.com/ToplessBanana/tutorials/master/HOW-TO-self-service-filevault-and-securetoken/resources/enable-filevault-self-service.png)
