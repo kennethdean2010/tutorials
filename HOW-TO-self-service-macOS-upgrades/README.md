@@ -1,6 +1,6 @@
 # Self Service macOS Upgrades
 
-We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing software deployment approach afforded us (see [Automated Software Deployment](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment)).
+We decided early on that we wanted to utilize Self Service for more intrusive tasks, such as macOS upgrades, while still maintaining the flexibility that our existing [software deployment approach](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-automated-software-deployment) afforded us.
 
 > **WARNING**
 
