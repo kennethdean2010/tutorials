@@ -2,7 +2,7 @@
 
 [Munkipkg](https://www.munki.org/munki-pkg/) is a very powerful and easy to use packaging tool for the macOS platform. And since it's command-line based, it's even easier to script. In this tutorial, we are going to create a simple package for the Firefox browser. Be sure to install Munkipkg and download my project template [here](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-software-packaging/resources/munki-pkg-template.zip?raw=true) before getting started.
 
-### Preparation
+## Prepare The Project
 
 In an effort to keep things organized, I've adopted the following directory structure on our package repository. This also allows us the flexibility to maintain multiple versions without needing to rename the packages themselves.
 
@@ -16,7 +16,7 @@ In this instance, rename the directory structure contained in `munki-pkg-templat
 /Mozilla/Firefox/57.0.3/Firefox/...
 ```
 
-## Download Firefox
+### Download Firefox
 
 Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Since this will be the version contained in our package, it's a good practice to move the original disk image to the `template` directory for safekeeping.
 
