@@ -8,7 +8,7 @@ We decided early on that we wanted to utilize Self Service for more intrusive ta
 
 ## Prerequisites
 
-Please complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) before proceeding.
+Complete the tutorial [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging) and upload the resulting package and scripts to your JAMF Pro distribution point before proceeding. For this example, we are deploying `Install macOS High Sierra`.
 
 ## Smart Computer Groups
 
@@ -98,8 +98,6 @@ Create a Policy called `macOS High Sierra` with the following configuration now.
 
 ## Putting It All Together
 
-Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS High Sierra` Static Computer Group. Once the package has deployed, the user will then see the `macOS High Sierra` policy in Self Service.
+Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS High Sierra` Static Computer Group. The user will then see the `macOS High Sierra` policy in Self Service once the package has successfully deployed to their workstation.
 
 ![macos-high-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-high-sierra-self-service.png)
-
-> NOTE: There are two additional benefits to this approach. First, should a new version of `Install macOS High Sierra.app` be released, updating existing deployments to the new version is as simple as replacing the package on the JAMF distribution point and updating the version criteria in the `deploy_macOS High Sierra` Smart Computer Group. The second is that it's easy to force the macOS upgrade to complete on the users workstation simply by changing the Trigger to "Recurring Check-In" on the `macOS High Sierra` policy and removing it from Self Service.
