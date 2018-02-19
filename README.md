@@ -13,3 +13,5 @@ A collection of tutorials about automating the management of macOS using [JAMF P
 [Self Service macOS Upgrades](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-self-service-macOS-upgrades/README.md)
 
 [Self Service FileVault And SecureToken](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-filevault-and-securetoken/README.md)
+
+[Manage User Installed Fonts](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-manage-user-installed-fonts/README.md)
