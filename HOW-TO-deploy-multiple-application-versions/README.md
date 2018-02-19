@@ -8,7 +8,7 @@ Please complete the tutorial [Automated Software Deployment](https://github.com/
 
 ## Packages
 
-Create packages for each version of Server (see [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the macOS Sierra version to `Server_Sierra.pkg` after-the-fact and upload both packages to your JAMF distribution point.
+Create packages for each version of Server (see [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the macOS Sierra version to `Server_Sierra.pkg` after-the-fact and upload both packages to your JAMF Pro distribution point.
 
 ## Static Computer Group
 
