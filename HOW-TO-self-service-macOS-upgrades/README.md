@@ -100,4 +100,6 @@ Create a Policy called `macOS High Sierra` with the following configuration now.
 
 Now that we have all of the components in place for our Self Service macOS upgrade, simply assign the users workstation to the `macOS High Sierra` Static Computer Group. The user will then see the `macOS High Sierra` policy in Self Service once the package has successfully deployed to their workstation.
 
+Should you ever need to force users to upgrade to macOS High Sierra without their interaction, simply change the Trigger on the `macOS High Sierra` policy to "Recurring Check-In" and remove it from Self Service.
+
 ![macos-high-sierra-self-service.png](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-macOS-upgrades/resources/macos-high-sierra-self-service.png)
