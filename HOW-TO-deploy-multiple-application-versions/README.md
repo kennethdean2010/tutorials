@@ -2,9 +2,9 @@
 
 When managing an environment that spans multiple versions of macOS, sometimes it becomes necessary to deploy two seperate versions of the same application due to OS incompatibilities. Thankfully, this can be pretty straightforward.
 
-## Packages
+## Prerequisites
 
-Create packages for each version of Server (see [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the macOS Sierra version to `Server_Sierra.pkg` after-the-fact and upload both packages to your JAMF Pro distribution point.
+Create separate packages for each version of the Server application (see [Software Packaging](https://github.com/ToplessBanana/tutorials/tree/master/HOW-TO-software-packaging)), but manually rename the macOS Sierra version to `Server_Sierra.pkg` after-the-fact and upload both of them to your JAMF Pro distribution point.
 
 ## Static Computer Group
 
