@@ -36,7 +36,7 @@ The following LaunchAgent was deployed to ```/Library/LaunchAgents/```.
 
 The following script was deployed to ```/Library/Scripts/```.
 
-```
+```bash
 #!/bin/sh
 
 rm -rf /Users/$USER/Library/Fonts/*
