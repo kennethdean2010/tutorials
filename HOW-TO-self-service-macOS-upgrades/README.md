@@ -91,7 +91,7 @@ Create a Policy called `macOS High Sierra` with the following configuration now.
   - [x] Make the policy available in Self Service
   - [x] Self Service Display Name: `macOS High Sierra`
   - [x] Button Name: `Upgrade`
-  - [x] Description: `Update your workstation to macOS High Sierra. This process may take awhile, so we recommend that you begin just prior to leaving for the day.`
+  - [x] Description: `Upgrade your workstation to macOS High Sierra. This process may take awhile, so we recommend that you begin just prior to leaving for the day.`
   - [x] Ensure that users view the description
 
 ## Putting It All Together
