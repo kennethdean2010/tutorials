@@ -12,7 +12,7 @@ This tutorial requires that your workstations are running macOS High Sierra (10.
 
 Upload the following [script](https://github.com/ToplessBanana/tutorials/blob/master/HOW-TO-self-service-filevault-and-securetoken/resources/enable_FileVault.sh) to your JAMF Pro repository now. Depending on your needs, you may want to customize which actions the script should perform and how it performs them.
 
-```
+```bash
 #!/bin/sh
 # This script is intended to be used with JAMF Self Service. It will enable SecureToken for the currently logged in user account
 # and either add it to the list of to FileVault enabled users or enable FileVault using a Personal Recovery Key.
