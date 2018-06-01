@@ -16,11 +16,11 @@ In this instance, rename the directory structure contained in `munki-pkg-templat
 /Mozilla/Firefox/57.0.3/Firefox/...
 ```
 
-#### Download Firefox
+### Download Firefox
 
 Download and install the latest version of [Firefox](https://www.mozilla.org/firefox/new/?scene=2) onto your system. Since this will be the version contained in our package, it's a good practice to move the original disk image to the `template` directory for safekeeping.
 
-#### build-info.plist
+### build-info.plist
 
 When it comes to the `identifier`, `name` and `version` of our package, I've found that it's best to keep it simple. In our environment we only deploy one version of an application at a time, which makes it easier to maintain consistency.
 
@@ -53,7 +53,7 @@ Update `build-info.plist` with the values as illustrated below.
 
 ```
 
-#### build-package.sh
+### build-package.sh
 
 The purpose of good automation is to do something repeatedly in a controlled, predictable fashion. Therefore the purpose of this script is to do three things: _Create the folders. Populate the payload. Build the package._
 
@@ -81,7 +81,7 @@ buildPackage
 
 ```
 
-#### remove_Firefox.sh
+### remove_Firefox.sh
 
 While it may not be necessary in every environment, I do like the having the ability to clean up after myself by creating an un-install script that only removes those things that my package has left behind.
 
