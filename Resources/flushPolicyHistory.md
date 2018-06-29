@@ -1,6 +1,6 @@
 # flushPolicyHistory
 
-Flush the Policy History for the computer on JAMF Pro.
+Flush the Policy History for a computer on JAMF Pro.
 
 **FUNCTION**
 ```bash
