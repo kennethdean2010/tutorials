@@ -10,7 +10,7 @@ userName="userName"
 userPassword="userPassword"
 
 enableSecureToken() {
-    /usr/bin/sudo sysadminctl -adminUser $adminUser -adminPassword $adminPassword -secureTokenOn $userName1 -password $userPassword1
+    /usr/bin/sudo /usr/sbin/sysadminctl -adminUser $adminUser -adminPassword $adminPassword -secureTokenOn $userName1 -password $userPassword1
 }
 ```
 
