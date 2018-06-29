@@ -24,6 +24,7 @@ fi
 ```
 
 **USAGE**
+
 | Field                 | Value
 |-----------------------|-------------------------------|
 | Display Name          | Self Service (Last Opened)    |
