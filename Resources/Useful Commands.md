@@ -149,9 +149,23 @@ Flush the Policy History for a computer on JAMF Pro.
 # Placeholder for Function.
 ```
 
+## Force Log Out User
+
+Force log out the currently logged in user.
+
+**COMMAND**
+```bash
+/usr/bin/killall -9 WindowServer
+```
+
+**FUNCTION**
+```bash
+# Placeholder for Function.
+```
+
 ## Get Logged In User
 
-Get the name of the user currently logged in.
+Get the name of the currently logged in user.
 
 **COMMAND**
 ```bash
