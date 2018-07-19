@@ -40,6 +40,7 @@ createLocalUserAccounts() {
 enableComputerName() {
     computerName="DEP`system_profiler SPHardwareDataType | awk '/Serial/ {print $4}'`"
     scutil --set ComputerName $computerName
+    scutil --set HostName $computerName
 }
 
 # Enable File Sharing.
