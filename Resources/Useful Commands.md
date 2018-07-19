@@ -221,6 +221,7 @@ Set the computer name to something uniquely generated.
 ```bash
 computerName="DEP`/usr/sbin/system_profiler SPHardwareDataType | /usr/bin/awk '/Serial/ {print $4}'`"
 /usr/sbin/scutil --set ComputerName $computerName
+/usr/sbin/scutil --set HostName $computerName
 ```
 
 **FUNCTION**
