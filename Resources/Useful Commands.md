@@ -34,6 +34,20 @@ Disable Computer Sleep.
 # Placeholder for Function.
 ```
 
+## Elevate Local User Account To Administrator
+
+Elevate a standard local user account to an administrator.
+
+**COMMAND**
+```bash
+/usr/sbin/dseditgroup -o edit -a $userName -t user admin
+```
+
+**FUNCTION**
+```bash
+# Placeholder for Function.
+```
+
 ## Enable File Sharing
 
 Enable File Sharing.
