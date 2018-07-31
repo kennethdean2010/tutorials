@@ -62,6 +62,20 @@ Enable File Sharing.
 # Placeholder for Function.
 ```
 
+## Enable Firmware Password
+
+Enable Firmware Password.
+
+**COMMAND**
+```bash
+/usr/bin/expect -c "spawn /usr/sbin/firmwarepasswd -setpasswd ; expect ":" ; send "$firmwarePassword\\n" ; expect ":" ; send "$firmwarePassword\\n" ; interact"
+```
+
+**FUNCTION**
+```bash
+# Placeholder for Function.
+```
+
 ## Enable Location Based Time Zone
 
 Enable Location-Based Time Zone.
