@@ -41,11 +41,6 @@ enableFileSharing() {
     /bin/launchctl load -w /System/Library/LaunchDaemons/com.apple.smbd.plist
 }
 
-# Enable Firmware Password.
-enableFirmwarePassword() {
-    /usr/bin/expect -c "spawn /usr/sbin/firmwarepasswd -setpasswd ; expect ":" ; send "$firmwarePassword\\n" ; expect ":" ; send "$firmwarePassword\\n" ; interact"
-}
-
 # Enable Remote Login, ($adminUser only).
 enableRemoteLogin() {
     /usr/sbin/systemsetup -setremotelogin on
@@ -92,7 +87,6 @@ flushPolicyHistory() {
 createLocalUserAccounts
 enableComputerName
 enableFileSharing
-enableFirmwarePassword
 enableRemoteLogin
 enableRemoteManagement
 enablePrinterAdministration
