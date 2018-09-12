@@ -256,3 +256,17 @@ computerName="DEP`/usr/sbin/system_profiler SPHardwareDataType | /usr/bin/awk '/
 ```bash
 # Placeholder for Function.
 ```
+
+## Set Date & Time
+
+Set the date & time using a network time server.
+
+**COMMAND**
+```bash
+/usr/bin/sudo /usr/sbin/ntpdate -u time.apple.com
+```
+
+**FUNCTION**
+```bash
+# Placeholder for Function.
+```
