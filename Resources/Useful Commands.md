@@ -263,7 +263,7 @@ Set the date & time using a network time server.
 
 **COMMAND**
 ```bash
-/usr/bin/sudo /usr/sbin/ntpdate -u time.apple.com
+/usr/bin/sudo /usr/bin/sntp -S time.apple.com
 ```
 
 **FUNCTION**
