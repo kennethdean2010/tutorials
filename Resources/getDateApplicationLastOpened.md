@@ -13,7 +13,7 @@ if [ ! -e "$APPLICATION_PATH" ]; then
 fi
 
 if [ -e "$APPLICATION_PATH" ]; then
-    result=`/usr/bin/mdls "$APPLICATION_PATH" | /usr/bin/grep kMDItemLastUsedDate | /usr/bin/awk '{print $3}'`
+    result=`/usr/bin/mdls "$APPLICATION_PATH" | /usr/bin/grep -w "kMDItemLastUsedDate" | /usr/bin/awk '{ print $3 }'`
 fi
 
 if [ "$result" == "" ]; then
